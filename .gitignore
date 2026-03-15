@@ -1,0 +1,25 @@
+# Nextflow work directory (can be very large)
+work/
+.nextflow/
+.nextflow.log*
+
+# Results (generated — not tracked in git)
+results/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Conda env (users create their own)
+.conda/
+
+# Data files (too large for git — use git-lfs or document separately)
+data/*.fastq
+data/*.fastq.gz
+data/*.fq
+data/*.fq.gz
+
+# OS files
+.DS_Store
+Thumbs.db

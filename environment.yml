@@ -1,0 +1,30 @@
+name: qc-pipeline
+# ──────────────────────────────────────────────────────────────────────────────
+# Conda environment for Quality Control (QC) Pipeline
+# Install: conda env create -f environment.yml
+# Activate: conda activate qc-pipeline
+# ──────────────────────────────────────────────────────────────────────────────
+channels:
+  - bioconda      # bioinformatics tools (NanoStat, Biopython)
+  - conda-forge   # up-to-date Python packages
+  - defaults
+
+dependencies:
+  # ── Python 
+  - python=3.10
+
+  # ── Pipeline orchestration 
+  - nextflow>=23.10.0     # Workflow manager
+
+  # ── FASTQ Quality Control Tool for Long Read Data
+  - nanostat>=1.6.0       
+
+  # ── Python libraries for FASTQ parsing and metrics calculation
+  - biopython>=1.81      
+
+  # ── Data analysis 
+  - pandas>=2.0
+
+  # ── Visualization 
+  - matplotlib>=3.7
+  - seaborn>=0.12
