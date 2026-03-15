@@ -70,6 +70,7 @@ conda activate qc-pipeline
 
 ### 3. Place your input file
 ```bash
+mkdir data/
 cp /path/to/barcode77.fastq.gz data/
 ```
 
